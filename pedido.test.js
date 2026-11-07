@@ -1,0 +1,7 @@
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const { calcularTotal } = require('./pedido');
+ 
+test('Dos almuerzos', () => {
+  assert.equal(calcularTotal(12000, 2), 24000);
+});
